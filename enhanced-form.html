@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Page with Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Info Page</h1>
+    <p>This page demonstrates HTML5 lists, tables, media, and forms with built-in validation.</p>
+  </header>
+
+  <section>
+    <h2>Top 3 Programming Languages</h2>
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+    </ol>
+
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Node.js</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technology Comparison Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Type</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Markup Language</td>
+          <td>Page Structure</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Style Sheet</td>
+          <td>Design/Layout</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Scripting Language</td>
+          <td>Interactivity</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Showcase</h2>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Image" />
+      <figcaption> image</figcaption>
+    </figure>
+
+    <p>Audio Sample:</p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Video Sample:</p>
+    <video controls width="400">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="John Doe" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="contact">Preferred Contact Method:</label>
+        <select id="contact" name="contact" required>
+          <option value="">--Select--</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked readonly />
+          Subscribe to newsletter (mandatory)
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required minlength="10" placeholder="Write your message here..."></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment</p>
+  </footer>
+
+</body>
+</html>
